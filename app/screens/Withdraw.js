@@ -25,10 +25,14 @@ import TextInLine from "../components/TextInLine/TextInLine";
 
 const IconAndText = ({customIcon,inlineText,size,marVert,marLeft,textColor,isBold}) => {
     return (
-        <TouchableHighlight style={{flexDirection:"row",marginVertical:marVert,marginLeft:marLeft}}>
-            <View>
+        <TouchableHighlight style={{marginVertical:marVert,marginLeft:marLeft}}>
+            <View style={{flexDirection:"row"}}>
                 {customIcon}
-                <Text style={{fontSize:size,color:textColor,fontWeight: isBold ? "bold":null}}>{inlineText}</Text>
+                <Text style={{fontSize:size,color:textColor,fontWeight: isBold ? "bold":null,
+                    marginHorizontal:wp('3%')
+                }}>
+                    {inlineText}
+                </Text>
             </View>
         </TouchableHighlight>
     )
@@ -69,6 +73,9 @@ const Withdraw = () => {
                 marVert={hp('5%')}
             />
             <IconAndText 
+                customIcon={
+                    <AntDesign name="clockcircleo" size={24} color="black" />
+                }
                 inlineText="Funds will be transferred to this account"
                 textColor="gray"
                 size={hp('3%')}

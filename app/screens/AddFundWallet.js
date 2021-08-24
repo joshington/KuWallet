@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch,StatusBar,View,Text,Platform,CheckBox, TouchableOpacity, TouchableHighlight, 
     Image,Dimensions,TextInput} from "react-native";
 // import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 import QRCode from 'react-native-qrcode-svg';
 import {
     heightPercentageToDP as hp,
@@ -51,10 +51,10 @@ const CustomInput = ({placeText,back,wid,high,fontBig,bord,marLeft,maTop}) => {
 
 const IconAndText = ({customIcon,inlineText,size,marVert,marLeft}) => {
     return (
-        <TouchableHighlight style={{flexDirection:"row",marginVertical:marVert,marginLeft:marLeft}}>
-            <View>
+        <TouchableHighlight style={{marginVertical:marVert,marginLeft:marLeft}}>
+            <View style={{flexDirection:"row"}}>
                 {customIcon}
-                <Text style={{fontSize:size}}>{inlineText}</Text>
+                <Text style={{fontSize:size,marginLeft:wp('3%'),color:"#9A9A9A",fontWeight:"bold"}}>{inlineText}</Text>
             </View>
         </TouchableHighlight>
     )
@@ -105,12 +105,12 @@ const AddFundWallet = () => {
                     />
                     <CustomInput 
                         placeText="Enter Amount"
-                        back="gray"
+                        back="#dcdcdc"
                         wid={wp('90%')}
                         high={hp('12%')}
                         fontBig={hp('5%')}
                         bord={hp('2.3%')}
-                        marLeft={wp('4%')}
+                        marLeft={wp('5%')}
                         maTop={hp('4%')}
                     />
                     <TextHeader 
@@ -167,6 +167,9 @@ const AddFundWallet = () => {
                         size={hp('4%')}
                         marVert={hp('2%')}
                         marLeft={wp('4%')}
+                        customIcon={
+                            <AntDesign name="creditcard" size={28} color="#9A9A9A" />
+                        }
                     />
                     <Separator 
                         dashColor="gray"
@@ -175,6 +178,9 @@ const AddFundWallet = () => {
                         marLeft={wp('5%')}
                     />
                     <IconAndText 
+                        customIcon={
+                            <MaterialCommunityIcons name="bank" size={28} color="#9A9A9A" />
+                        }
                         inlineText="Others"
                         size={hp('4%')}
                         marVert={hp('2%')}
@@ -188,3 +194,7 @@ const AddFundWallet = () => {
 }
 
 export default AddFundWallet;
+
+
+
+
