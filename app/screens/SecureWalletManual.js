@@ -36,7 +36,7 @@ const SecureWalletManual = ({route, navigation}) => {
     return (
         <Container>
             <StatusBar />
-            <View style={{marginVertical:hp('5%')}}>
+            <View>
                 <View style={{flexDirection:"row",marginHorizontal:wp('6%')}}>
                         <TouchableOpacity onPress={() => navigation.navigate('SecureWallet')}
                             
@@ -51,8 +51,8 @@ const SecureWalletManual = ({route, navigation}) => {
                     <TextHeader 
                         headerText="Secure Your Wallet"
                         isBold
-                        size={hp('4%')}
-                        marTop={hp('3%')}
+                        size={hp('3%')}
+                        marTop={hp('2.5%')}
                         textColor="blue"
                     />
                     <CustomLogo 
@@ -194,7 +194,7 @@ const SecureWalletManual = ({route, navigation}) => {
                     textColor="#ffffff"
                     onPress={() => navigation.navigate('ModalWallet')}
                     maTop={hp('1.6%')}
-                    size={hp('5%')}
+                    size={hp('4%')}
                     
                 />
             </View>

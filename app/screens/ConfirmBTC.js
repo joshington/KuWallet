@@ -135,8 +135,8 @@ const ConfirmBTC = ({route,navigation}) => {
                         /> */}
                     </View>
                 </View>
-                <View style={{height:hp('42%'),backgroundColor:"gray",
-                            marginVertical:hp('4%'),marginHorizontal:wp('6%'),borderRadius:hp('2.2%')}}>
+                <View style={{height:hp('42%'),backgroundColor:"#DCDCDC",
+                            marginVertical:hp('4%'),marginHorizontal:wp('6%'),borderRadius:hp('4%')}}>
                     <TextInLine 
                         text1="Amount"
                         text2="0.2140 BTC"
@@ -149,7 +149,7 @@ const ConfirmBTC = ({route,navigation}) => {
                         marVert={hp('4%')}
                         size={hp('3%')}
                     />
-                    <Separator dashColor="black" viewHeight={hp('0.2%')} maTop={hp('1%')} />
+                    <Separator dashColor="#808080" viewHeight={hp('0.2%')} maTop={hp('1%')} />
                     <TextInLine 
                         text1="Total Amount"
                         text2="0.3340 BTC"
@@ -169,6 +169,7 @@ const ConfirmBTC = ({route,navigation}) => {
                     textColor="white"
                     background="blue"
                     maBot={hp('2%')}
+                    onPress={() => {navigation.navigate('MyWallet')}}
                 />
                 
             </Container>

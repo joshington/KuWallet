@@ -37,10 +37,10 @@ const CreatePassword = ({route,navigation}) => {
     return(
         <Container>
             <StatusBar />
-            <ScrollView style={{marginVertical:hp('5%')}}>
+            {/* <ScrollView style={{marginVertical:hp('5%')}}> */}
                     {/* <StepWithArrow /> */}
                 <View style={{flexDirection:"row",
-                    marginHorizontal:wp('6%'),
+                    marginHorizontal:wp('6%'),marginTop:hp('2%')
                 }}>
                     <TouchableOpacity onPress={() => navigation.navigate('Welcome')}
                         
@@ -55,15 +55,15 @@ const CreatePassword = ({route,navigation}) => {
                 <TextHeader 
                     headerText="Create Password" 
                     direction="center" textColor="blue" 
-                    size={hp('4%')}
-                    marTop={hp('5%')}
+                    size={hp('3.5%')}
+                    marTop={hp('2.5%')}
                     isBold
                     
                 />
                 <TextHeader 
                     headerText="This password will unlock your Metamask wallet only on this service" 
                     direction="center"
-                    size={hp('3%')}
+                    size={hp('2.7%')}
                     marTop={hp('2.5%')}
                 />
                 <InputWithBorder 
@@ -98,7 +98,7 @@ const CreatePassword = ({route,navigation}) => {
                         <Feather name="eye" size={24} color="black" />
                     }
                 />
-                <View style={{marginTop:hp('5%'),flexDirection:"row",justifyContent:"space-around"}}>
+                <View style={{marginTop:hp('3%'),flexDirection:"row",justifyContent:"space-around"}}>
                     <Text style={{fontSize:hp('2.9%'),fontWeight:"bold"}}>
                         Sign in with Face ID?
                     </Text>
@@ -135,7 +135,7 @@ const CreatePassword = ({route,navigation}) => {
                     maTop={hp('2.4%')}
                     
                 />
-            </ScrollView>
+            {/* </ScrollView> */}
             
 
         </Container>

@@ -17,9 +17,10 @@ import ConfirmBTC from "../screens/ConfirmBTC";
 import AmountBTC from "../screens/AmountBTC";
 import AddFundWallet from "../screens/AddFundWallet";
 import Withdraw from "../screens/Withdraw";
-
-
-
+import MyWallet from "../screens/MyWallet";
+import MyWalletAnother from "../screens/MyWalletAnother";
+import WithDrawAnother from "../screens/WithdrawAnother";
+import TradeGraph from "../screens/TradeGraph";
 
 
 const Stack = createStackNavigator()
@@ -50,7 +51,14 @@ const Navigator = () => {
                 <Stack.Screen options={{headerShown:false}} name="SendTo"  component={SendTo} />
                 <Stack.Screen options={{headerShown:false}} name="AmountBTC"  component={AmountBTC} />
                 <Stack.Screen options={{headerShown:false}} name="ConfirmBTC"  component={ConfirmBTC} />
-            </Stack.Navigator>
+                <Stack.Screen options={{headerShown:false}} name="MyWallet"  component={MyWallet} />
+                <Stack.Screen options={{headerShown:false}} name="Withdraw"  component={Withdraw} />
+                <Stack.Screen options={{headerShown:false}} name="WithdrawAnother"  component={WithDrawAnother} />
+                <Stack.Screen options={{headerShown:false}} name="MyWalletAnother"  component={MyWalletAnother} />
+                <Stack.Screen options={{headerShown:false}} name="AddFundWallet"  component={AddFundWallet} />   
+                <Stack.Screen options={{headerShown:false}} name="TradeGraph"  component={TradeGraph} />   
+
+         </Stack.Navigator>
         </NavigationContainer>
     )
 }

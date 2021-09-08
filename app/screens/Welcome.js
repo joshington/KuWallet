@@ -162,12 +162,12 @@ const Welcome = ({route, navigation}) => {
 const styles = StyleSheet.create({
     header:{
         // fontFamily:"Questrial",
-        fontSize:hp('6%'),
+        fontSize:hp('5%'),
         paddingTop:hp('2.7%'),
         alignSelf:"center"
     },
     headerBig:{
-        fontSize:hp('6.8%'),
+        fontSize:hp('5%'),
         alignSelf:"center"
     },
     // image:{

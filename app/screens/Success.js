@@ -18,7 +18,7 @@ const Success =({route,navigation}) => {
     return(
         <Container>
             <StatusBar />
-            <View style={{marginVertical:hp('5%')}}>
+            <View>
                 <View style={{flexDirection:"row",
                         marginHorizontal:wp('6%'),
                     }}>
@@ -34,7 +34,7 @@ const Success =({route,navigation}) => {
                 <Icon 
                     iconBackground="#28FFBF"
                     direction="flex-end"
-                    maTop={hp('5%')}
+                    maTop={hp('3%')}
                     maRight={wp('15%')}
                 />
             <View style={{flexDirection:"row"}}>
@@ -72,8 +72,8 @@ const Success =({route,navigation}) => {
                     headerText="Success!"
                     textColor="blue"
                     isBold
-                    marTop={hp('2.5%')}
-                    size={hp('6%')}
+                    marTop={hp('2%')}
+                    size={hp('3.5%')}
                 />
                 <TextHeader 
                     headerText="You've successfully protected your wallet.

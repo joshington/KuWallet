@@ -18,7 +18,7 @@ const WriteDownSeed = ({route,navigation}) => {
     return(
         <Container>
             <StatusBar />
-            <View style={{marginVertical:hp('5%')}}>
+            <View style={{marginVertical:hp('2%')}}>
                 <View style={{flexDirection:"row",
                         marginHorizontal:wp('6%'),
                         }}>
@@ -35,7 +35,7 @@ const WriteDownSeed = ({route,navigation}) => {
                         headerText="Write Down Your Seed Phrase"
                         isBold
                         size={hp('3.3%')}
-                        marTop={hp('3%')}
+                        marTop={hp('1.5%')}
                         textColor="blue"
                 />
                 <TextHeader 
@@ -56,7 +56,7 @@ const WriteDownSeed = ({route,navigation}) => {
                         numberText={1}
                         cardText="future"
                         backColor="#dcdcdc"
-                        size={hp('4%')}
+                        size={hp('3%')}
                         textColor="black"
                         //     cardWid={wp('4%')}
                         cardHigh={hp('7%')}
@@ -65,7 +65,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={2}
                                 cardText="use"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -74,7 +74,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={3}
                                 cardText="abuse"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -83,7 +83,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={4}
                                 cardText="bubble"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -92,7 +92,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={5}
                                 cardText="disagree"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -101,7 +101,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={6}
                                 cardText="yard"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -110,7 +110,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={7}
                                 cardText="exit"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -119,7 +119,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={8}
                                 cardText="enact"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -128,7 +128,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={9}
                                 cardText="drum"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -137,7 +137,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={10}
                                 cardText="frequent"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -146,7 +146,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={11}
                                 cardText="target"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -155,7 +155,7 @@ const WriteDownSeed = ({route,navigation}) => {
                                 numberText={12}
                                 cardText="organ"
                                 backColor="#dcdcdc"
-                                size={hp('4%')}
+                                size={hp('3%')}
                                 textColor="black"
                                 // cardWid={wp('46%')}
                                 cardHigh={hp('7%')}
@@ -167,7 +167,7 @@ const WriteDownSeed = ({route,navigation}) => {
                         background="blue" 
                         textColor="#ffffff"
                         onPress={() => navigation.navigate('ConfirmSeedPhrase')}
-                        maTop={hp('1.1%')}
+                        maTop={hp('0.7%')}
                         size={hp('5%')}
                 />
             </View>

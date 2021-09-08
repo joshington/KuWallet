@@ -25,7 +25,7 @@ import TextInLine from "../components/TextInLine/TextInLine";
 
 const WalletCard = ({amount,amountBTC,dollarAmount,percent}) => {
     return(
-        <View style={{flexDirection:"row",alignSelf:"center",marginTop:hp('2%')}}>
+        <View style={{flexDirection:"row",marginHorizontal:wp('2%'),marginTop:hp('2%')}}>
             <View style={{width:wp('18%'),height:hp('30%'),
                 backgroundColor:"black",flexDirection:"column",borderTopLeftRadius:hp('3%'),
                 borderBottomLeftRadius:hp('3%'),justifyContent:"space-around",alignItems:"center"}}
@@ -82,7 +82,7 @@ const WalletCard = ({amount,amountBTC,dollarAmount,percent}) => {
       
     )
 }
-7
+
 const MyWalletAnother = () => {
     return(
         <Container>
@@ -103,47 +103,10 @@ const MyWalletAnother = () => {
                 dollarAmount={492.23}
                 percent={8.9}
             />
-            <View style={{flexDirection:"row",alignSelf:"center",marginVertical:hp('3%'),
-                justifyContent:"space-between"
-            }}>
-                <View>
-                    <View style={{height:hp('8%'),width:wp('15%'),backgroundColor:"#0096FF",
-                        borderRadius:hp('4%'),alignItems:"center",
-                        justifyContent:"center"
-                    }}>
-                        <Feather name="send" size={24} color="white" />
-                    </View>
-                    <Text style={{textAlign:"center",fontWeight:"bold",fontSize:hp('3.2%'),
-                        color:"#0096FF"
-                    }}>
-                        Send</Text>
-                </View>
-                <View>
-                    <Image 
-                        source={require('./images/receive.png')}
-                        style={{borderRadius:70,width:wp('15%'),height:hp('8%'),
-                        marginHorizontal:wp('8%')}}
-                                // resizeMode="contain"
-                                // style={{width: 60, height: 60}}
-                    />
-                   <Text style={{textAlign:"center",fontWeight:"bold",fontSize:hp('3.2%'),
-                        color:"#0096FF"
-                    }}>
-                       Receive</Text>
-                </View>
-               <View>
-                    <Image 
-                        source={require('./images/withdraw.png')}
-                        style={{borderRadius:70,width:wp('15%'),height:hp('8%')}}
-                                    // resizeMode="contain"
-                                    // style={{width: 60, height: 60}}
-                    />
-                     <Text style={{textAlign:"center",fontWeight:"bold",fontSize:hp('3.2%'),
-                         color:"#0096FF"
-                    }}>
-                         Withdraw</Text>
-               </View>
-               
+            <View style={{flexDirection:"row"}}>
+                {/* <View style={{height:hp('15%'),width:wp('20%'),margin}}>
+                    <Feather name="send" size={30} color="black" />
+                </View> */}
             </View>
             <TextHeader 
                 headerText="My Coins"
@@ -157,64 +120,19 @@ const MyWalletAnother = () => {
                 
             }}>
                 <View style={{height:hp('10%'),width:wp('18%'),backgroundColor:"black",
-                    alignItems:"center",justifyContent:"center",borderRadius:hp('2%')}}>
+                    alignItems:"center",justifyContent:"center",borderRadius:hp('1%')}}>
                     <FontAwesome5 name="bitcoin" size={36} color="orange" />
                 </View>
                 <View style={{marginLeft:wp('4%')}}>
                     <Text style={{fontWeight:"bold"}}>BTC</Text>
-                    <Text style={{marginTop:hp('3%'),color:"gray",
-                    fontWeight:"bold"}}>$31990</Text>
+                    <Text style={{marginTop:hp('3%')}}>$31990</Text>
                 </View>
                 <Text style={{color:"green",fontWeight:"bold"}}>8.9%</Text>
-                <Image 
-                    source={require('./images/curve.png')}
-                    style={{borderRadius:70,width:wp('15%'),height:hp('8%'),
-                        marginHorizontal:wp('3%')}}
-                            // resizeMode="contain"
-                            // style={{width: 60, height: 60}}
-                />
-                <View style={{marginLeft:wp('1%')}}>
+                <View style={{marginLeft:wp('24%')}}>
                     <Text style={{fontWeight:"bold"}}>$25k</Text>
-                    <Text style={{marginTop:hp('3%'),color:"gray",fontWeight:"bold"}}>
-                        1.5264 BTC</Text>
+                    <Text style={{marginTop:hp('3%')}}>1.5264 BTC</Text>
                 </View>
             </View>
-            <View 
-                style={{backgroundColor:"#F2F4F4",height:hp('0.6%'),marginTop:hp('15%')}}
-            />
-            <View style={{height:hp('12%'),shadowColor:'#000',marginTop:hp('0.3%'),
-                shadowOffset: {width: 0, height:10},shadowOpacity: 0.12,
-                shadowRadius:60,elevation: 2,flexDirection:"row",justifyContent:"space-between",
-                alignItems:"center"
-            }}
-            >
-                <View>
-                    <Image 
-                        source={require('./images/wallet.png')}
-                        style={{width:wp('15%'),height:hp('8%'),
-                        marginHorizontal:wp('8%')}}
-                                    // resizeMode="contain"
-                                    // style={{width: 60, height: 60}}
-                    />
-                    <Text style={{textAlign:"center",color:"#0096FF"}}>Wallet</Text>
-                </View>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('TradeGraph')}
-                >
-                    <Image 
-                        source={require('./images/trade.png')}
-                        style={{width:wp('26%'),height:hp('14%'),marginBottom:hp('11%')}}
-                                        // resizeMode="contain"
-                                        // style={{width: 60, height: 60}}
-                    />
-                </TouchableOpacity>
-                <View style={{marginRight:wp('5%')}}>
-                    <Ionicons name="ios-settings-sharp" size={43} color="gray" />
-                    <Text style={{textAlign:"center",color:"gray"}}>Settings</Text>
-                </View>
-
-            </View>
-            
             
         </Container>
     )

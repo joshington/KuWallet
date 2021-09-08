@@ -75,8 +75,8 @@ const ConfirmSeedPhrase = ({route,navigation}) => {
                     headerText="Select each word in the order it was presented to you"
                     textColor="black"
                     direction="center"
-                    size={hp('4%')}
-                    marTop={hp('5%')}
+                    size={hp('2.7%')}
+                    marTop={hp('2.5%')}
                     // isJust
                     marHor={wp('5%')}
                     // isBold

@@ -23,8 +23,8 @@ import CustomIndicator from "../components/CustomIndicator/CustomIndicator";
 const SecureWallet = ({route, navigation}) => {
     return (
        <Container>
-           <View style={{marginBottom:hp('5%')}}>
-            <View style={{flexDirection:"row",marginHorizontal:wp('6%'),marginTop:hp('5%')
+           <View>
+            <View style={{flexDirection:"row",marginHorizontal:wp('6%'),marginTop:hp('3%')
                     }}>
                         <TouchableOpacity onPress={() => navigation.navigate('CreatePassword')}
                             
@@ -35,11 +35,11 @@ const SecureWallet = ({route, navigation}) => {
                             two
                         />
                 </View>
-            <StatusBar />
+            {/* <StatusBar /> */}
             <Icon 
                     iconBackground="#28FFBF"
                     direction="flex-end"
-                    maTop={hp('5%')}
+                    maTop={hp('2.5%')}
                     maRight={wp('15%')}
             />
                 <View style={{flexDirection:"row"}}>
@@ -66,7 +66,7 @@ const SecureWallet = ({route, navigation}) => {
             <TextHeader 
                     headerText="Secure Your Wallet"
                     isBold
-                    size={hp('4%')}
+                    size={hp('3%')}
                     marTop={hp('3%')}
             />
             <TextHeader 
@@ -74,7 +74,7 @@ const SecureWallet = ({route, navigation}) => {
                     saving your Seed phrase in a place
                     you trust."
                     isJust
-                    size={hp('3%')}
+                    size={hp('2.7%')}
                     marTop={hp('2%')}
                     marHor={wp('6%')}
             />
@@ -82,7 +82,7 @@ const SecureWallet = ({route, navigation}) => {
                     headerText="It's the only way to recover your wallet if you get
                     locked out of the app or get a new device."
                     isJust
-                    size={hp('3%')}
+                    size={hp('2.7%')}
                     marTop={hp('0.7%')}
                     marHor={wp('6%')}
             />
@@ -90,8 +90,8 @@ const SecureWallet = ({route, navigation}) => {
                     headerText="Remind Me Later"
                     textColor="blue"
                     isBold
-                    size={hp('4%')}
-                    marTop={hp('0.7%')}
+                    size={hp('3%')}
+                    marTop={hp('0.5%')}
                     marHor={wp('6%')}
             />
                 <ButtonWIthText 

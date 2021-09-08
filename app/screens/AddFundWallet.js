@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch,StatusBar,View,Text,Platform,CheckBox, TouchableOpacity, TouchableHighlight, 
     Image,Dimensions,TextInput} from "react-native";
 // import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
-import { AntDesign, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons,Ionicons} from '@expo/vector-icons';
 import QRCode from 'react-native-qrcode-svg';
 import {
     heightPercentageToDP as hp,
@@ -61,20 +61,22 @@ const IconAndText = ({customIcon,inlineText,size,marVert,marLeft}) => {
 }
 
 
-const AddFundWallet = () => {
+const AddFundWallet = ({route,navigation}) => {
     return(
         <Container>
             <StatusBar />
             <ScrollView>
-                <View style={{marginBottom:hp('20%')}}>
-                    <View style={{flexDirection:"row",marginLeft:wp('5%'),marginTop:hp('2%')}}>
+                <View style={{marginBottom:hp('5%')}}>
+                    <TouchableOpacity style={{flexDirection:"row",marginLeft:wp('5%'),marginTop:hp('2%')}}
+                        onPress={() => navigation.navigate('MyWallet')}
+                    >
                         <AntDesign name="arrowleft" size={30} color="black" />
                         <TextHeader 
                             headerText="Add Funds to Wallet"
                             size={hp('3.5%')}
                             isBold
                         />
-                    </View>
+                    </TouchableOpacity>
                     <View style={{flexDirection:"row",marginTop:hp('4%')}}>
                         <TextHeader 
                             headerText="Balance:"
@@ -127,14 +129,18 @@ const AddFundWallet = () => {
                         maTop={hp('2%')}
                         marLeft={wp('5%')}
                     />
-                    <View>
+                    <View style={{flexDirection:"row",marginTop:hp('3%'),
+                    justifyContent:"space-around"}}>
                         <TextHeader 
                             headerText="INDIAN OVERSEAS BANK +4564"
                             direction="flex-start"
-                            marTop={hp('3%')}
-                            size={hp('3%')}
+                            // marTop={hp('3%')}
+                            size={hp('2.6%')}
                             marLeft={wp('5%')}
+                            textColor="gray"
+                            isBold
                         />
+                        <Ionicons name="ios-radio-button-on-outline" size={24} color="blue" />
                     </View>
                     <TextHeader 
                         headerText="Pay from"
@@ -152,9 +158,17 @@ const AddFundWallet = () => {
                     />
                     <IconAndText 
                         inlineText="UPI"
-                        size={hp('4%')}
+                        size={hp('3%')}
                         marVert={hp('2%')}
                         marLeft={wp('4%')}
+                        customIcon={
+                            <Image source={require('./images/upi.png')}
+                                style={{width:wp('13%'),height:hp('5%'),
+                                 marginHorizontal:wp('3%')}}
+                            // resizeMode="contain"
+                            // style={{width: 60, height: 60}}
+                            />
+                        }
                     />
                     <Separator 
                         dashColor="gray"
@@ -164,11 +178,16 @@ const AddFundWallet = () => {
                     />
                     <IconAndText 
                         inlineText="Net Banking"
-                        size={hp('4%')}
+                        size={hp('3%')}
                         marVert={hp('2%')}
                         marLeft={wp('4%')}
                         customIcon={
-                            <AntDesign name="creditcard" size={28} color="#9A9A9A" />
+                            <Image source={require('./images/netbank.png')}
+                                style={{width:wp('13%'),height:hp('5%'),
+                                 marginHorizontal:wp('3%')}}
+                            // resizeMode="contain"
+                            // style={{width: 60, height: 60}}
+                            />
                         }
                     />
                     <Separator 
@@ -179,10 +198,15 @@ const AddFundWallet = () => {
                     />
                     <IconAndText 
                         customIcon={
-                            <MaterialCommunityIcons name="bank" size={28} color="#9A9A9A" />
+                            <Image source={require('./images/others.png')}
+                                style={{width:wp('13%'),height:hp('5%'),
+                                 marginHorizontal:wp('3%')}}
+                            // resizeMode="contain"
+                            // style={{width: 60, height: 60}}
+                            />
                         }
                         inlineText="Others"
-                        size={hp('4%')}
+                        size={hp('3%')}
                         marVert={hp('2%')}
                         marLeft={wp('4%')}
                     />

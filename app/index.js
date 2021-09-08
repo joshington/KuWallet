@@ -17,11 +17,11 @@ import AddFundWallet from "./screens/AddFundWallet";
 import Withdraw from "./screens/Withdraw";
 import MyWallet from "./screens/MyWallet";
 import WithDrawAnother from "./screens/WithdrawAnother";
-// import TradeGraph from "./screens/TradeGraph";
+import TradeGraph from "./screens/TradeGraph";
 import MyWalletAnother from "./screens/MyWalletAnother";
 
 
 export default () => (
-    <MyWalletAnother />
+    <Navigator />
 )
   

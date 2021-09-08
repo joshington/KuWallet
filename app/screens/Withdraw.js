@@ -52,18 +52,20 @@ NameAndValue.propTypes = {
     val:PropTypes.any
 }
 
-const Withdraw = () => {
+const Withdraw = ({route,navigation}) => {
     return(
         <Container>
             <StatusBar />
-            <View style={{flexDirection:"row",marginLeft:wp('5%'),marginTop:hp('2%')}}>
+            <TouchableOpacity style={{flexDirection:"row",marginLeft:wp('5%'),marginTop:hp('2%')}}
+                onPress={() => {navigation.navigate('WithdrawAnother')}}
+            >
                 <AntDesign name="arrowleft" size={30} color="black" />
                 <TextHeader 
                     headerText="Withdraw"
                     size={hp('3.5%')}
                     isBold
                 />
-            </View>
+            </TouchableOpacity>
             <IconAndText 
                 inlineText="Withdrawal"
                 textColor="black"
@@ -97,7 +99,7 @@ const Withdraw = () => {
             <TouchableOpacity style={{
                 width:wp('40%'),backgroundColor:"blue",height:hp('7%'),justifyContent:"center",
                 borderRadius:wp('3%'),marginLeft:wp('5%'),marginTop:hp('3%')
-            }}>
+            }} onPress={() => navigation.navigate('MyWalletAnother')}>
                 <Text style={{color:"#ffffff",fontSize:hp('4%'),textAlign:"center"}}>Confirm</Text>
             </TouchableOpacity>
         </Container>
